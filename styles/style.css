@@ -18,10 +18,25 @@ main{
         padding: 10px;
         border-radius: 10px;
     }
+
+#output{
+    text-align: end;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}    
     
 button{
         width: 58px;
         height: 50px;
         font-size: large;
         border-radius: 5px;
-      }    
+      }
+      
+#equal{
+    width: 100%;
+}      
+
+#clearbtn{
+    text-align: center;
+}

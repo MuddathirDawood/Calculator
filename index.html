@@ -11,33 +11,37 @@
   <main>
     <div id="box">
     <div>
-    <textarea cols="31" rows="3,5" disabled></textarea>
+    <textarea id="output" cols="23" rows="3,5" disabled></textarea>
     </div>
     <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
+        <button type="button" onclick="addNumb(1)">1</button>
+        <button type="button" onclick="addNumb(2)">2</button>
+        <button type="button" onclick="addNumb(3)">3</button>
+        <button type="button" onclick="addOp('+')">+</button>
     </div>
     <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
+        <button type="button" onclick="addNumb(4)">4</button>
+        <button type="button" onclick="addNumb(5)">5</button>
+        <button type="button" onclick="addNumb(6)">6</button>
+        <button type="button" onclick="addOp('-')">-</button>
     </div>
     <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>*</button>
+        <button type="button" onclick="addNumb(7)">7</button>
+        <button type="button" onclick="addNumb(8)">8</button>
+        <button type="button" onclick="addNumb(9)">9</button>
+        <button type="button" onclick="addOp('*')">*</button>
     </div>
     <div>
-        <button>,</button>
-        <button>0</button>
-        <button>+</button>
-        <button>/</button>
+        <button type="button" onclick="addDec('.')">,</button>
+        <button type="button" onclick="addNumb(0)">0</button>
+        <button type="button" onclick="equal()">=</button>
+        <button type="button" onclick="addOp('/')">/</button>
+    </div>
+    <div id="clearbtn">
+        <button type="button" onclick="reset(clear)">AC</button>
     </div>
     </div>            
   </main>
+  <script src="./script/code.js"></script>
 </body>
 </html>
