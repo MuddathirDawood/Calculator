@@ -38,7 +38,8 @@
         <button type="button" onclick="addOp('/')">/</button>
     </div>
     <div id="clearbtn">
-        <button type="button" onclick="reset(clear)">AC</button>
+        <button type="button" onclick="document.getElementById('output').innerHTML = document.getElementById('output').innerHTML.slice(0, -1) ">DEL</button>
+        <button type="button" onclick="document.getElementById('output').innerHTML = ''">AC</button>
     </div>
     </div>            
   </main>
